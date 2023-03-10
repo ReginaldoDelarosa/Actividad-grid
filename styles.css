@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&family=Playfair+Display&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+li{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: bolder;
+   
+    width: 80px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: width .5s,height .5s,background-color .5s;
+    flex-wrap:wrap;
+}
+.estilosN{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+
+    width: 100%; 
+}
+/*.navbarC{
+    background-color:aliceblue;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    box-shadow:0px 2px 15px rgba(0, 0, 0, 0.408);
+    
+}*/
+.navbarC{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+    grid-template-areas: "logo menus toggler";
+    justify-items: stretch;
+    align-items: stretch;
+    column-gap: 20px;
+    
+}
+.estilosN{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #331B3B;
+    font-size:24px;
+    gap:20px;
+}
+li:hover{
+    width:85px;
+    height: 55px;
+    background-color:#635985;
+}
+a:link{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+a:active{
+    text-decoration:none;
+}
+#container{
+    background: url(".\img\Group 4.png");
+    background-size: 100px;
+    display:flex;
+    gap: 10%;
+    width: 100%;
+    height: 580px;  
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.containerOfContainers{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;   
+}
+.container1{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.container2{
+    display: grid;
+    width:100%;
+    height:100%;
+    background-color:rgb(255, 255, 255);
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+
+}
+.container3{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+.container4{
+    width:100%;
+    height:100%;
+    background-color:white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.container5{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.cont1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 12px;
+}
+.cont2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 12px;
+}
+.cont2 img{
+    width: 298px;
+    height: 368px;
+    
+}
+.cont1 img{
+    width: 100%;
+    height: 100%;
+    
+}
+.group3{
+    display: flex;
+    flex-direction: column; 
+}
+.p1{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 700;
+font-size: 87px;
+line-height: 99.8%;
+letter-spacing: -0.01em;
+margin-bottom: 0px;
+color:#331B3B;
+
+}
+.p2{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 400;
+    font-size: 87px;
+    line-height: 99.8%;
+    letter-spacing: -0.01em;
+    margin-top: 0px;
+    color:#331B3B;
+    
+}
+.p3{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    letter-spacing: -0.01em;
+    color:#331B3B;
+    
+}
+.getButton{
+font-family: 'Hind Vadodara', sans-serif;
+width: 207px;
+height: 66px;
+left: 50px;
+top: 634px;
+background: #331B3B;
+border-radius: 10px;
+display:flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+font-weight: 700;
+color: white
+}
+.cardsTitles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.tarjeta{
+    display: flex;
+    width:308px;
+    height:192px;
+    border-radius: 5px;
+    background-color:#FFFFFF;
+    transition: width .5s,height .5s,background-color .5s;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 32%);
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding:5px;
+}
+.tarjeta2{
+    display: flex;
+    width: 448px;
+    height: 310px;
+    border-radius: 5px;
+    background-color:#FFFFFF;
+    transition: width .5s,height .5s,background-color .5s;
+    flex-wrap: nowrap;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 32%);
+    flex-direction: column;
+    padding:5px;
+}
+.tarjetaContainer {
+    font-family: 'Roboto Mono', monospace;
+    font-size:15px;
+    text-align:center;
+    font-weight: bold;
+    gap:10px;
+
+}
+.cardimg{
+    width:54px;
+    height: 48px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFDED4
+}
+.cardimg{
+    width:54px;
+    height: 48px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFFFFF
+}
+.cardimg img{
+    width: 29.54px;
+    height: 29.54px;
+}
+ .cont1 img{
+        width: 100%;
+        height: 100%;
+        
+    }
+.cardtitle{
+font-family: 'Hind Vadodara', sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size:16px;
+color:#331B3B;
+line-height: 137.3%;
+letter-spacing: 0.055em;
+text-transform: uppercase;
+}
+.cardsbody{
+font-family: 'Hind Vadodara', sans-serif;
+font-weight: 300;
+font-size: 15px;
+color:#331B3B;
+}
+.organizer{
+    display: flex;
+    gap: 10px;}
+
+.texto1{
+    display: flex;
+    flex-direction: column;
+}
+.pc5cont{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.pc5{
+    font-family: 'Hind Vadodara', sans-serif;
+    width: 84px;
+    height: 35px;
+    color: #331B3B;
+    font-weight: 700;
+    font-size: 23px;
+    margin:0;
+}
+.butc5{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #343434;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+.mg1 {
+    width: 298px;
+    height: 368px;
+}
+.containerfooter{
+
+    background-color: black;
+    border-radius: 0px 200px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+.footer{
+    color: white;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+@media (max-width: 700px) { 
+    .pc5{
+        font-family: 'Hind Vadodara', sans-serif;
+        width: 84px;
+        height: 35px;
+        color: #331B3B;
+        font-weight: 700;
+        font-size: 23px;
+        margin:0;
+    }
+    .containerfooter{
+
+        background-color: black;
+        border-radius: 0px 200px 0px 0px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 0.5fr;
+        justify-content: center;
+        align-items: center;
+        padding: 35px;
+        width: 100%;
+    }
+    .container2{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+    .container1{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+    }
+    .container3{
+        width:100%;
+        height:100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        align-items: center;
+        
+    }
+    .container4{
+        width:100%;
+        height:100%;
+        background-color:white;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr ;
+        align-items: center;
+    }
+    .container5{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .cont1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .cont1 img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .mg1 {
+        width: 298px;
+        height: 368px;
+    }
+    .navbarC{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo menus toggler";
+        justify-items: stretch;
+        align-items: stretch;
+        column-gap: 20px;
+        
+    }
+
+    .cardimg img{
+        width: 29.54px;
+        height: 29.54px;
+    }
+    .tarjeta{
+        display: flex;
+        width:308px;
+        height:60%;
+        border-radius: 5px;
+        background-color:#FFFFFF;
+        transition: width .5s,height .5s,background-color .5s;
+        flex-wrap: wrap;
+        gap:10%;
+        box-shadow: 0px 3px 15px rgb(0 0 0 / 32%);
+        flex-direction: column;
+    }
+    .organizer{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .containerTextF{
+    margin-top: 15%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    }
+ }
